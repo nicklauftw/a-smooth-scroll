@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>jQuery Boilerplate</title>
+		<title>A Smooth Scroll Plugin</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<script src="../dist/jquery.asmooth.js"></script>
+		<script src="jquery.asmooth.js"></script>
 		<style type="text/css">
 			.container {
 				margin: 0 auto;
@@ -19,7 +19,6 @@
 			section {
 				width: 75%;
 				float: right;
-				/*margin-bottom: 400px;*/
 			}
 
 			section:last-child {
@@ -29,10 +28,11 @@
 	</head>
 	<body>
 		<div class="container">
+			<h1>A Smooth Scrolling jQuery Plugin</h1>			
 			<nav>
 				<ul id="smooth-scroll">
-					<li><a title="section1" href="#section1">Section 1</a></li>
-					<li><a title="section2" href="#section2">Section 2</a></li>
+					<li><a title="intro" href="#intro">Intro</a></li>
+					<li><a title="usage" href="#usage">Usage</a></li>
 					<li><a title="section3" href="#section3">Section 3</a></li>
 					<li><a title="section4" href="#section4">Section 4</a></li>
 					<li><a title="section5" href="#section5">Section 5</a></li>
@@ -41,16 +41,26 @@
 			</nav>
 
 			<section>
-				<a id="section1"><h2>Section 1</h2></a>
+				<a id="intro"><h2>Intro</h2></a>
 				<p>
-					Blue bottle try-hard messenger bag intelligentsia fixie. Sriracha thundercats art party Williamsburg swag. Literally quinoa trust fund, ethnic helvetica cred Tonx Neutra irony cornhole bitters DIY church-key messenger bag. Jean shorts Banksy fashion axe literally. Post-ironic bicycle rights Banksy vegan intelligentsia. Sartorial synth viral, deep v flexitarian umami Odd Future. Cornhole helvetica chillwave mumblecore DIY, polaroid intelligentsia.
+					My first jQuery plugin I've written with the help of the Yeoman jQuery plugin boilerplate generator. I feel that many jQuery plugins I find have too many options, too complex for the problem I am trying to solve and have a rather large footprint.
+				</p>
+				<p>
+					This simple plugin allows for smooth scrolling to an anchor on a page and fallbacks to the default behaivor with Javascript turned off. This is useful for single page portfolio sites or as a table of contents for long articles. There are only two options and the minified file is very lightweight.
+				</p>
+				<p>
+					<a href="https://github.com/nicklauftw/a-smooth-scroll">Fork it!</a>
 				</p>
 			</section>
 
 			<section>
-				<a id="section2"><h2>Section 2</h2></a>
+				<a id="usage"><h2>Usage</h2></a>
 				<p>
-					Irony sartorial hashtag Etsy occupy fixie. Freegan wolf fashion axe pickled irony, hoodie High Life. Mlkshk craft beer mixtape, Marfa Austin food truck gastropub disrupt Schlitz Carles Tonx thundercats vegan Pinterest helvetica. American apparel fixie leggings plaid tousled, try-hard asymmetrical bespoke ethical kitsch. Food truck tofu retro locavore, VHS tote bag freegan High Life. Whatever Carles messenger bag skateboard cred. Williamsburg vegan squid, seitan before they sold out scenester hella street art ennui hashtag chambray keffiyeh.
+					The gist is self explanatory on setup.
+				</p>
+				<script src="https://gist.github.com/nicklauftw/5681702.js"></script>
+				<p>
+					Below is hipster ipsum filler!
 				</p>
 			</section>
 
@@ -86,16 +96,10 @@
 		<script>
 			$(function() {
 				$("#smooth-scroll").anchorSmooth({
-					yOffset: 250,
-					speed: 50
+					yOffset: 20,
+					speed: 700
 				});
 			});
-
-			// $(document).ready(function() {
-			//   $("#a-smooth").a_smooth({
-			// 		propertyName: "a custom value"
-			// 	});
-			// });
 		</script>
 	</body>
 </html>
