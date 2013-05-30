@@ -1,0 +1,29 @@
+{
+	"name": "asmoothscroll",
+	"title": "A Smooth Scroll",
+	"description": "Simple plugin for smooth srolling anchors",
+	"keywords": [
+		"jquery",
+		"anchor",
+		"smooth",
+		"scroll",
+		"plugins"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Nick Lau",
+		"email": "nicklauftwa@gmail.com",
+		"url": "https://github.com/nicklauftw"
+	},
+	"maintainers": [
+		{
+			"name": "Nick Lau",
+			"email": "nicklauftw@gmail.com",
+			"url": "https://github.com/nicklauftw"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}
+
