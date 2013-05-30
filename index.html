@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Boilerplate</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/jquery.asmooth.js"></script>
+		<style type="text/css">
+			.container {
+				margin: 0 auto;
+				width: 960px;
+			}
+
+			nav {
+				width: 25%;
+				float: left;
+				position: fixed;
+			}
+
+			section {
+				width: 75%;
+				float: right;
+				/*margin-bottom: 400px;*/
+			}
+
+			section:last-child {
+				margin-bottom: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul id="smooth-scroll">
+					<li><a title="section1" href="#section1">Section 1</a></li>
+					<li><a title="section2" href="#section2">Section 2</a></li>
+					<li><a title="section3" href="#section3">Section 3</a></li>
+					<li><a title="section4" href="#section4">Section 4</a></li>
+					<li><a title="section5" href="#section5">Section 5</a></li>
+					<li><a title="section6" href="#section6">Section 6</a></li>
+				</ul>
+			</nav>
+
+			<section>
+				<a id="section1"><h2>Section 1</h2></a>
+				<p>
+					Blue bottle try-hard messenger bag intelligentsia fixie. Sriracha thundercats art party Williamsburg swag. Literally quinoa trust fund, ethnic helvetica cred Tonx Neutra irony cornhole bitters DIY church-key messenger bag. Jean shorts Banksy fashion axe literally. Post-ironic bicycle rights Banksy vegan intelligentsia. Sartorial synth viral, deep v flexitarian umami Odd Future. Cornhole helvetica chillwave mumblecore DIY, polaroid intelligentsia.
+				</p>
+			</section>
+
+			<section>
+				<a id="section2"><h2>Section 2</h2></a>
+				<p>
+					Irony sartorial hashtag Etsy occupy fixie. Freegan wolf fashion axe pickled irony, hoodie High Life. Mlkshk craft beer mixtape, Marfa Austin food truck gastropub disrupt Schlitz Carles Tonx thundercats vegan Pinterest helvetica. American apparel fixie leggings plaid tousled, try-hard asymmetrical bespoke ethical kitsch. Food truck tofu retro locavore, VHS tote bag freegan High Life. Whatever Carles messenger bag skateboard cred. Williamsburg vegan squid, seitan before they sold out scenester hella street art ennui hashtag chambray keffiyeh.
+				</p>
+			</section>
+
+			<section>
+				<a id="section3"><h2>Section 3</h2></a>
+				<p>
+					Umami occupy blue bottle pug ennui gastropub helvetica, vinyl yr hoodie swag cred. Austin irony single-origin coffee gastropub, banh mi vinyl fixie art party aesthetic +1. Direct trade hella pitchfork raw denim Schlitz tousled, viral mumblecore Marfa keffiyeh flexitarian cornhole brunch readymade. Vegan synth banh mi kogi chillwave lo-fi. Intelligentsia biodiesel messenger bag, seitan photo booth american apparel sriracha Wes Anderson Neutra gentrify Banksy Williamsburg. Street art stumptown fashion axe seitan. Master cleanse four loko tattooed banjo, cardigan YOLO semiotics Bushwick plaid shoreditch actually fashion axe.
+				</p>
+			</section>
+
+			<section>
+				<a id="section4"><h2>Section 4</h2></a>
+				<p>
+					Gluten-free narwhal skateboard Williamsburg stumptown mlkshk. Raw denim Cosby sweater church-key umami flannel, lo-fi meh Tonx direct trade keffiyeh selfies. Banksy trust fund blue bottle, fanny pack ennui 8-bit viral raw denim locavore umami selfies vegan Austin. Hella farm-to-table post-ironic Williamsburg. Portland VHS cred master cleanse, blue bottle brunch sriracha farm-to-table flexitarian bicycle rights tote bag Tonx Godard blog semiotics. Small batch keytar Truffaut mlkshk, hoodie McSweeney's kogi vegan butcher ethnic Odd Future tote bag trust fund you probably haven't heard of them pug. Banh mi tattooed fashion axe, 3 wolf moon hoodie jean shorts pork belly synth quinoa ugh hella trust fund keffiyeh.
+				</p>
+			</section>
+
+			<section>
+				<a id="section5"><h2>Section 5</h2></a>
+				<p>
+					Polaroid selfies direct trade gastropub, lo-fi Schlitz intelligentsia beard swag pitchfork banh mi typewriter. Twee typewriter Wes Anderson, small batch lomo McSweeney's selvage Austin photo booth plaid gluten-free. Ugh Vice butcher gluten-free twee fanny pack Truffaut, hoodie fingerstache small batch before they sold out. Polaroid farm-to-table kogi, +1 fixie typewriter Wes Anderson. 8-bit photo booth whatever post-ironic, jean shorts Godard ugh cred before they sold out occupy kogi. Kogi Cosby sweater High Life semiotics helvetica leggings selfies. Pitchfork ennui YOLO bicycle rights organic, tousled plaid quinoa blue bottle ethical hashtag disrupt Wes Anderson hella Terry Richardson.
+				</p>
+			</section>
+
+			<section>
+				<a id="section6"><h2>Section 6</h2></a>
+				<p>
+					Echo Park meh aesthetic fashion axe before they sold out synth, Brooklyn kogi hoodie YOLO jean shorts plaid. Keytar put a bird on it flexitarian actually mumblecore wayfarers pour-over, bicycle rights messenger bag ugh meggings Portland gluten-free church-key fanny pack. Craft beer organic tote bag, put a bird on it hashtag meggings occupy Austin VHS vinyl pug you probably haven't heard of them. Tofu Terry Richardson selvage, kogi locavore VHS four loko 90's. Ethnic biodiesel semiotics flannel Austin. Irony tofu polaroid 3 wolf moon, stumptown photo booth fap chambray butcher american apparel Cosby sweater pop-up. Art party quinoa thundercats mumblecore tousled synth.
+				</p>
+			</section>
+		</div>
+
+		<script>
+			$(function() {
+				$("#smooth-scroll").anchorSmooth({
+					yOffset: 250,
+					speed: 50
+				});
+			});
+
+			// $(document).ready(function() {
+			//   $("#a-smooth").a_smooth({
+			// 		propertyName: "a custom value"
+			// 	});
+			// });
+		</script>
+	</body>
+</html>
