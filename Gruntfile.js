@@ -20,7 +20,8 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: ["src/jquery.asmooth.js"],
-				dest: "dist/jquery.asmooth.js"
+				dest: "dist/jquery.asmooth.js",
+				dest: "demo/jquery.asmooth.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"

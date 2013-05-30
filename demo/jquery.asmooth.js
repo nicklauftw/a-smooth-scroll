@@ -35,9 +35,9 @@
                         yOffset = this.options.yOffset;
                         this.element.click(function(e) {
                             e.preventDefault();
-                            target = this.getAttribute("href");
+                            target_id = this.getAttribute("href");
                             $("html, body").animate({
-                                scrollTop: $(target).offset().top + yOffset
+                                scrollTop: $(target_id).offset().top + yOffset
                             }, speed);
                             
                         });
@@ -54,3 +54,5 @@
         };
 
 })( jQuery, window, document );
+
+

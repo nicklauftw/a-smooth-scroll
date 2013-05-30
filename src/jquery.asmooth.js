@@ -28,9 +28,9 @@
                         yOffset = this.options.yOffset;
                         this.element.click(function(e) {
                             e.preventDefault();
-                            target = this.getAttribute("href");
+                            target_id = this.getAttribute("href");
                             $("html, body").animate({
-                                scrollTop: $(target).offset().top + yOffset
+                                scrollTop: $(target_id).offset().top + yOffset
                             }, speed);
                             
                         });
@@ -48,23 +48,4 @@
 
 })( jQuery, window, document );
 
-/* THE CODE
 
-var nav_items = document.getElementsByClassName("nav-item");
-
-    $(nav_items).click(function(e) {
-        
-        var pathname = window.location.pathname;
-        console.log(pathname);
-        target = $(this).attr("href");
-        target = target.replace('/','');    
-        console.log($(target).offset().top);            
-        $('html, body').animate({
-            scrollTop: $(target).offset().top - 60
-        }, 500);
-        // location = pathname;     
-            
-        e.preventDefault();
-    });
-
-*/
